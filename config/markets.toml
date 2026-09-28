@@ -1,0 +1,28 @@
+# Market data sources.
+# Fingrid dataset IDs verified against https://data.fingrid.fi/api/datasets on 2026-09-28.
+# All Fingrid datasets below are hourly capacity prices in €/MW/h (API unit "EUR/MW").
+
+[fingrid.fcr_n]
+dataset_id = 317
+name = "Frequency Containment Reserve for Normal operation, hourly market prices"
+
+[fingrid.fcr_d_up]
+dataset_id = 318
+name = "Frequency Containment Reserve for Disturbances upwards regulation, hourly market prices"
+
+[fingrid.fcr_d_down]
+dataset_id = 283
+name = "Frequency Containment Reserve for Disturbances downwards regulation, hourly market prices"
+
+[fingrid.afrr_up]
+dataset_id = 52
+name = "Automatic Frequency Restoration Reserve, price, up"
+
+[fingrid.afrr_down]
+dataset_id = 51
+name = "Automatic Frequency Restoration Reserve, price, down"
+
+# Day-ahead energy prices in €/MWh. Resolution is PT60M before the 2025 move to
+# 15-minute products and PT15M after; the fetcher keeps whatever ENTSO-E returns.
+[entsoe.day_ahead_fi]
+bidding_zone = "10YFI-1--------U"

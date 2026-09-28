@@ -3,6 +3,9 @@
 Mean-variance and mean-CVaR allocation of a battery's capacity across
 Finnish reserve markets (FCR-N, FCR-D up/down, aFRR) and the day-ahead spread.
 
+See BLUEPRINT.md for the repo layout, open modelling decisions and decision log.
+Keep it up to date when the structure or a decision changes.
+
 ## Stack
 - Python 3.12, uv for dependency management
 - pandas, numpy, cvxpy, matplotlib

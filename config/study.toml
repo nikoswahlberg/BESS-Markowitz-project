@@ -1,0 +1,6 @@
+# Research period. Dates are inclusive and in Finnish local time, matching the
+# markets' delivery days; code converts them to UTC instants when fetching.
+[period]
+start = 2026-01-01
+end = 2026-06-30
+timezone = "Europe/Helsinki"
